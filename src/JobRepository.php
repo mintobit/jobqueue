@@ -4,6 +4,21 @@ namespace Mintobit\JobQueue;
 
 use \PDO as Connection;
 
+/**
+ * Implies table schema below
+ *
+ * +-----------+-------------+------+-----+---------+----------------+
+ * | Field     | Type        | Null | Key | Default | Extra          |
+ * +-----------+-------------+------+-----+---------+----------------+
+ * | id        | int(11)     | NO   | PRI | NULL    | auto_increment |
+ * | type_id   | smallint(6) | NO   | MUL | NULL    |                |
+ * | status_id | smallint(6) | NO   |     | NULL    |                |
+ * | worker_id | smallint(6) | NO   |     | NULL    |                |
+ * | data      | longtext    | NO   |     | NULL    |                |
+ * | created   | datetime    | NO   |     | NULL    |                |
+ * | updated   | datetime    | NO   |     | NULL    |                |
+ * +-----------+-------------+------+-----+---------+----------------+
+ */
 final class JobRepository implements JobRepositoryInterface
 {
     /**
