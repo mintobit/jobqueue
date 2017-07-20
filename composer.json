@@ -1,0 +1,15 @@
+{
+    "name": "mintobit/jobqueue",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Nizhegorodov",
+            "email": "mintobit@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.5.0",
+        "ext-pdo": "*"
+    }
+}
